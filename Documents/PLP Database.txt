@@ -1,0 +1,65 @@
+Hotel Table:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into hotel (hotel_id,hotel_name,city,address,average_fare,email,phone_number,desrciption)
+		values(301,'Taj','Pune','101 Hinjewadi phase1',1000.0,'tajhotel@gmail.com',9876543210,'Lake view');
+
+insert into hotel (hotel_id,hotel_name,city,address,average_fare,email,phone_number,desrciption)
+		values(302,'Taj1','Pune','102 Hinjewadi phase2',2000.0,'ms@gmail.com',9976543210,'Lake view');
+		
+insert into hotel (hotel_id,hotel_name,city,address,average_fare,email,phone_number,desrciption)
+		values(303,'Taj2','Pune','103 Hinjewadi phase1',3000.0,'taj@gmail.com',8876543210,'Lake view');
+
+insert into hotel (hotel_id,hotel_name,city,address,average_fare,email,phone_number,desrciption)
+		values(304,'Taj3','Mumbai','101 Hinjewadi phase1',4000.0,'tm@gmail.com',7876543210,'Lake view');
+
+insert into hotel (hotel_id,hotel_name,city,address,average_fare,email,phone_number,desrciption)
+		values(305,'Taj4','Pune','104 Hinjewadi phase1',2000.0,'tn@gmail.com',7776543210,'Lake view');
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+Room Table:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into room (room_id,hotel_id,room_type,per_night_fare,availability) 
+				values(100,301,'AC',2000,'Y');
+insert into room (room_id,hotel_id,room_type,per_night_fare,availability) 
+				values(101,301,'NONAC',2000,'N');
+insert into room (room_id,hotel_id,room_type,per_night_fare,availability) 
+				values(103,302,'AC',2000,'Y');
+insert into room (room_id,hotel_id,room_type,per_night_fare,availability) 
+				values(104,303,'NONAC',2000,'N');
+insert into room (room_id,hotel_id,room_type,per_night_fare,availability) 
+				values(105,303,'NONAC',2000,'N');
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Book Table:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into booking(booking_id,user_id,room_id,hotel_id,hotel_name,check_in_date,check_out_date,no_of_adults,no_of_children,amount)
+values(201,1,101,301,'Taj','2020-02-28','2020-03-01',1,2,2000);
+
+insert into booking(booking_id,user_id,room_id,hotel_id,hotel_name,check_in_date,check_out_date,no_of_adults,no_of_children,amount)
+values(202,2,102,302,'Taj2','2020-03-03','2020-03-05',1,2,5000);
+
+insert into booking(booking_id,user_id,room_id,hotel_id,hotel_name,check_in_date,check_out_date,no_of_adults,no_of_children,amount)
+values(203,1,101,301,'Taj3','2020-02-28','2020-03-01',1,2,2000);
+
+insert into booking(booking_id,user_id,room_id,hotel_id,hotel_name,check_in_date,check_out_date,no_of_adults,no_of_children,amount)
+values(204,2,102,302,'Taj4','2020-03-03','2020-03-05',1,2,5000);
+
+insert into booking(booking_id,user_id,room_id,hotel_id,hotel_name,check_in_date,check_out_date,no_of_adults,no_of_children,amount)
+values(205,2,102,302,'Taj','2020-03-03','2020-03-05',1,2,5000);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User Table:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into Users(user_id,user_name,password,role,phone_number,email_id) 
+values (1,'sashank','sashank','ROLE_CUSTOMER',7894561230,'anil@gmail.com');
+
+insert into Users(user_id,user_name,password,role,phone_number,email_id) 
+values (2,'siddharth','siddharth','ROLE_CUSTOMER',7412589630,'siddharth@gmail.com');
+
+insert into Users(user_id,user_name,password,role,phone_number,email_id) 
+values (3,'avinash','avinash','ROLE_CUSTOMER',9874560123,'avinash@gmail.com');
+
+insert into Users(user_id,user_name,password,role,phone_number,email_id) 
+values (5,'nikhil','nikhil','ROLE_CUSTOMER',9632587410,'nikhil@gmail.com');
+
+insert into Users(user_id,user_name,password,role,phone_number,email_id) 
+values (6,'admin','admin1234','ROLE_ADMIN',8521479360,'admin@gmail.com');
